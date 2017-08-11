@@ -24,7 +24,7 @@ $(document).ready(function() {
     var Name = $("#name").val();
     var total = question1 + question2 + question3 + question4 + question5;
     // $("#output").text(Name);
-    $("#output").text(qtotal);
+    $("#output").text(Name+" here is your result:");
     // $("#output").text(question2);
     // $("#output").text(question3);
     // $("#output").text(question4);
@@ -34,9 +34,20 @@ $(document).ready(function() {
 
 
 
-    if (qtotal >= 1) {
-
-      $('.phpresult').toggle();
+    if (qtotal <= 6) {
+      $(".radio").toggle();
+      $("h1").toggle();
+      $("h5").toggle();
+      $(".whatsname").toggle();
+      // $("h1").toggle();
+      // $("#output").text(Name+" here is your result:");
+      $('.javaresult').fadeToggle();
+    } else if (qtotal >= 7 && qtotal <= 9) {
+      $(".phpresult").fadeToggle();
+    } else if (qtotal >=10 && qtotal <=15) {
+      $(".rubyresult").fadeToggle();
+    } else {
+      alert("Not all questions answered, refresh page and answer all before submitting");
     }
 
     // note add an if statement to do alert if answers add to less then 6 as question was not answered

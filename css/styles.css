@@ -12,3 +12,11 @@
 .rubyresult {
   display: none;
 }
+
+.btn {
+  margin: 30px;
+}
+
+.results {
+  font-size: 22;
+}
