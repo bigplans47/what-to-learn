@@ -10,10 +10,12 @@
   <body>
     <div class="container">
       <form class="forminfo" id="generalquestionsforcode">
+      <div class="jumbotron">
       <h1>What Epicodus track should I learn?</h1>
       <h5>There are so many Epicodus tracks to learn, this guide will make a recommendation of which track is right for you. The results will be between Java/Andriod, PHP/Drupal, Ruby/Rails.
       </h5>
-        <div class="question">
+      </div>
+        <div class="question well">
           <div class="radio">
             <h2 class="titlequestion">So who do you want to work for?</h2>
             <label><input type="radio" name="question1" value="1">Want to work with big companies</label>
@@ -34,7 +36,7 @@
             </label>
           </div>
         </div>
-        <div class="question">
+        <div class="question well">
           <div class="radio">
             <h2 class="titlequestion">What are you interested in?</h2>
             <label><input type="radio" name="question2" value="1">Interested in internet of things</label>
@@ -60,7 +62,7 @@
             </label>
           </div>
         </div>
-        <div class="question">
+        <div class="question well">
           <div class="radio">
             <h2 class="titlequestion">Which company are you interested in?</h2>
             <label><input type="radio" name="question3" value="1">Nike</label>
@@ -76,7 +78,7 @@
             </label>
           </div>
         </div>
-        <div class="question">
+        <div class="question well">
           <div class="radio">
             <h2 class="titlequestion">Where do you see yourself?</h2>
             <label><input type="radio" name="question4" value="1">Want to work with sensors in NBA basketballs</label>
@@ -92,7 +94,7 @@
             </label>
           </div>
         </div>
-        <div class="question">
+        <div class="question well">
           <div class="radio">
             <h2 class="titlequestion">What are you interested in?</h2>
             <label><input type="radio" name="question5" value="1">Interested in flexibility</label>
@@ -117,28 +119,45 @@
             <label for="name">What is your name?</label>
             <input type="text" id="name" class="form-control">
         </div>
-
         <button class="btn btn-success" type="submit">Submit These Responses</button>
         <div class="results" id="output">
         </div>
       </form>
-<!-- tyring to hide the button idk how -->
       <div class="resultsontrack">
-        <div class="javaresult">
-          <h4>You should study Java/Andriod</h4>
-          <p>Working with big companies and battle tested code that runs stable and about anywhere is what you want and that's why this is a good track for you.</p>
+
+        <div class="javaresult panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">You should study Java/Andriod</h4>
+          </div>
+          <div class="panel-body">
+            <p>Working with big companies and battle tested code that runs stable and about anywhere is what you want and that's why this is a good track for you.</p>
+          </div>
           <img src="img/java.jpg" alt="java" media="responsive" class="img-responsive img-rounded"/>
         </div>
-        <div class="phpresult">
-          <h4>You should study PHP/Drupal</h4>
-          <p>Working with medium companies and code that is consistenly used in a certain area what you want and that's why this is a good consistent track for you.</p>
-          <img src="img/php.jpg" alt="php" class="img-responsive img-rounded"/>
+        <div class="phpresult panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">You should study PHP/Drupal</h4>
+          </div>
+          <div class="panel-body">
+            <p>Working with medium companies and code that is consistenly used in a certain area what you want and that's why this is a good consistent track for you.</p>
+          </div>
+          <img src="img/php.jpg" alt="java" media="responsive" class="img-responsive img-rounded"/>
         </div>
-        <div class="rubyresult">
+        <div class="rubyresult panel panel-default">
+          <div class="panel-heading">
+          <h4 class="panel-title">You should study Ruby/Rails</h4>
+          </div>
+          <div class="panel-body">
+            <p>Working with small and startup companies who want simple easy to read and write code is your speed and that's why this is a good track for you.</p>
+          </div>
+          <img src="img/ruby.jpg" alt="java" media="responsive" class="img-responsive img-rounded"/>
+        </div>
+
+        <!-- <div class="rubyresult22">
           <h4>You should study Ruby/Rails</h4>
           <p>Working with small and startup companies who want simple easy to read and write code is your speed and that's why this is a good track for you.</p>
           <img src="img/ruby.jpg" alt="ruby" class="img-responsive img-rounded"/>
-          </div>
+          </div> -->
       </div>
     </div>
   </body>
