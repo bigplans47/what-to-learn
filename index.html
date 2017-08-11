@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+
+    <title>What coding Epicodus track to learn</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>What Epicodus track should I learn?</h1>
+      <p>There are so many Epicodus tracks to learn, this guide will make a recommendation of which track is right for you. The results will be between Java/Andriod, PHP/Drupal, Ruby/Rails.
+      </p>
+      <form class="forminfo" id="generalinfo">
+        <div class="question">
+          <div class="radio">
+            <h2 class="titlequestion">So select the options that appeal the most to you below.</h2>
+            <label><input type="radio" name="question1" value="1">Want to work with big companies</label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="question1" value="2">
+              Want to work with medium companies
+            </label>
+          </div>
+          <div class="radio">
+            <label><input type="radio" name="question1" value="3">
+              Want to work with startup companies
+            </label>
+          </div>
+        </div>
+        <div class="question">
+          <div class="radio">
+            <label><input type="radio" name="question2" value="1">
+              Interested in internet of things
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="2">
+              Interested in celeb news sites
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="3">
+              Interested in apps
+            </label>
+          </div>
+        </div>
+        <div class="question">
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value"1">
+              Work at Nike
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value"2">
+              Work at Metal Toad or Intel
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" value"3">
+              Work at New Relic
+            </label>
+          </div>
+          <div class="question">
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value"1">
+                Want to work with sensors in NBA basketballs
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value"2">
+                Want to work with getting TMZ or People.com content posting
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question4" value"3">
+                Want to work with adding functionality to the Airbnb site and app
+              </label>
+            </div>
+          </div>
+          <div class="question">
+            <div class="radio">
+              <label>
+                <input type="radio" name="question5" value"1">
+                Interested in flexibility
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question5" value"2">
+                Interested in stability
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="question5" value"3">
+                Interested in speed
+              </label>
+            </div>
+          </div>
+          <div class="question">
+            <!-- //something they can type answer to -->
+            <label for="name">What is your name?</label>
+            <input type="text" id="name" class="form-control">
+            </div>
+        </div>
+        <button class="btn btn-success" type="submit">Submit These Responses</button>
+        <div class="results" id="output">
+        </div>
+          <!-- the response appears here -->
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
