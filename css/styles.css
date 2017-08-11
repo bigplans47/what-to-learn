@@ -1,3 +1,14 @@
 /*.resultsontrack {
   margin: 40px;
 }*/
+.javaresult {
+  display: none;
+}
+
+.phpresult {
+  display: none;
+  }
+
+.rubyresult {
+  display: none;
+}
